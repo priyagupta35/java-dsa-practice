@@ -1,5 +1,20 @@
+
+// Description:
+// Given a string, reverse it and return the reversed string.
+
+// Example:
+// Input: "WELCOME"
+// Output: "EMOCLEW"
+
+// Approach:
+// Convert string to character array and use two pointers
+// to swap characters from start and end.
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// */
 package strings;
-class revstring 
+class reversestring 
 {
     public static void main(String[] args)
      {

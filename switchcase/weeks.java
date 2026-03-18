@@ -1,3 +1,17 @@
+// Problem: Print Day of Week using Switch Case
+// Topic: Java Basics (Switch Case)
+
+// Description:
+// Given a number from 1 to 7, print the corresponding day of the week.
+// If the number is not between 1 and 7, print "INVALID".
+
+// Approach:
+// Used switch-case to map each number to a day.
+
+// Time Complexity: O(1)
+// Space Complexity: O(1)
+
+
 package switchcase;
 
 import java.util.*;

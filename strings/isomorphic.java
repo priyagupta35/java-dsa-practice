@@ -1,3 +1,22 @@
+// Problem: Isomorphic Strings
+// Topic: Strings + Hashing
+
+// Description:
+// Two strings s and t are isomorphic if characters in s can be replaced 
+// to get t, with a one-to-one mapping between characters.
+
+// Example:
+// s = "egg", t = "add" → true
+// s = "foo", t = "bar" → false
+
+// Approach:
+// Use two HashMaps:
+// 1. mapST → maps characters from s to t
+// 2. mapTS → maps characters from t to s (to ensure uniqueness)
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
 package strings;
 import java.util.HashMap;
 //import java.util.*;
@@ -12,7 +31,7 @@ public class isomorphic {
         HashMap<Character,Character> mapST=new HashMap<>();
         HashMap<Character,Character> mapTS=new HashMap<>();
 
-        for(int i=0;i<=s.length()-1;i++)
+        for(int i=0;i<=s.length();i++)
         {
 
             char c1=s.charAt(i);
@@ -43,7 +62,7 @@ public class isomorphic {
         }
         return true;
     }
-}
+
 
     public static void main(String[] args)
      {
@@ -61,6 +80,7 @@ public class isomorphic {
         }
 
     }
-}
+     }
+    }
 
      

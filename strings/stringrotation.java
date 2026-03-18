@@ -1,7 +1,19 @@
+// Problem: Check String Rotation (Brute Force)
+// Topic: Strings
+
+// Approach:
+// Generate all rotations and compare with goal.
+
+// Time Complexity: O(n^2)
+// Space Complexity: O(n)
+
+
+
+
 package strings;
-import java.util.*;
+//import java.util.*;
 public class stringrotation {
-    public boolean rotatedString(String s,String goal)
+    public boolean stringrotation(String s,String goal)
     {
         if(s.length()!=goal.length()) //checks if it is of equal length 
         {
