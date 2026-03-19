@@ -1,3 +1,26 @@
+
+/*
+Problem: Print Triangle Pattern using Recursion
+Topic: Recursion (Pattern Problems)
+
+Description:
+Print a right-angled triangle pattern of stars (*) 
+using recursion instead of loops.
+
+Approach:
+- Use two parameters: rows (r) and columns (c)
+- Base case: if r == 0, stop recursion
+- If c < r:
+    • Print "*"
+    • Move to next column (c + 1)
+- Else:
+    • Move to next line
+    • Reduce row count (r - 1) and reset column to 0
+
+Time Complexity: O(n^2)
+Space Complexity: O(n)  // recursion stack
+*/
+
 package recursion;
 
 public class patternproblemtriangle {

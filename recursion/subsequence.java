@@ -1,3 +1,35 @@
+/*
+Problem: Generate Subsequences of a String
+Topic: Recursion (Subsequences / Backtracking Basics)
+
+Description:
+Generate all possible subsequences of a given string 
+using recursion. A subsequence is formed by either 
+including or excluding each character.
+
+Also includes:
+- Returning subsequences as an ArrayList
+- Generating subsequences with ASCII values
+
+Approach:
+- Use two strings:
+  • p (processed)
+  • up (unprocessed)
+- Base case: if unprocessed string is empty, store/print result
+- For each character:
+  • Include the character → subseq(p + ch, up.substring(1))
+  • Exclude the character → subseq(p, up.substring(1))
+- For ASCII version:
+  • Add third choice → include ASCII value of character
+
+Time Complexity:
+- Normal subsequences: O(2^n)
+- With ASCII: O(3^n)
+
+Space Complexity: O(n)  // recursion stack (excluding output space)
+*/
+
+
 package recursion;
 
 import java.util.ArrayList;
@@ -15,7 +47,7 @@ public class subsequence {
         char ch=up.charAt(0);
     subseq(p+ch, up.substring(1));  //recursive call
         subseq(p, up.substring(1));
-        subseq(p, up);
+        //subseq(p, up);
 
       
     }
