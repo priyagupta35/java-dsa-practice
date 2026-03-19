@@ -24,6 +24,7 @@ The goal of this repository is to improve problem-solving skills and prepare for
         ├── recursion
         ├── linkedlist
         ├── binarysearch
+        ├──Stack & Queue
 
         
 
