@@ -12,9 +12,7 @@
 // Output:
 // Length: 16
 // Uppercase: MY NAME IS RAHUL
-// Lowercase: my name is rahul
-
-// Time Complexity: O(n)
+// Lowercase: my name is rahul// Time Complexity: O(n)
 // Space Complexity: O(n)
 // */
 
