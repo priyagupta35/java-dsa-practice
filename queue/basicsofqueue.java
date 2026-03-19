@@ -1,9 +1,33 @@
-package stack.Queue.queue;
+/*
+Problem: Basics of Queue Implementation
+Topic: Queue (Java Collections Framework)
+
+Description:
+Demonstrates basic operations of a Queue using Java's 
+LinkedList implementation. Elements are inserted into 
+the queue and removed in FIFO (First-In-First-Out) order.
+
+Approach:
+- Use Queue interface with LinkedList class
+- Add elements using add()
+- Remove elements using remove()
+- Observe FIFO behavior by removing elements sequentially
+
+Time Complexity:
+Enqueue (add): O(1)
+Dequeue (remove): O(1)
+Peek: O(1)
+
+Space Complexity: O(n)
+*/
+
+
+package queue;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
-import javax.swing.plaf.metal.MetalBorders.ScrollPaneBorder;
+
 
 public class basicsofqueue {
     public static void main(String[] args) {
