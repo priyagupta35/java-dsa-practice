@@ -1,4 +1,22 @@
-package arrays.arrays.binarysearch;
+
+// Problem: Valid Anagram
+// Topic: Strings + Sorting
+
+// Description:
+// Check if two strings are anagrams of each other.
+
+// Approach:
+// - Convert strings to char arrays
+// - Sort both arrays
+// - Compare them
+
+// Time Complexity: O(n log n)
+// Space Complexity: O(n)
+    
+
+
+
+package strings;
 import java.util.Arrays;
 
 public class anagram {
@@ -14,13 +32,10 @@ public class anagram {
         //{
           //  for(int j=0;j<t.length();j++)
             //{
-
-            
-        
         Arrays.sort(sArray);
         Arrays.sort(tArray);
            // }
-        return Arrays.equals(sArray,sArray);
+        return Arrays.equals(sArray,tArray);
     }
 
     public static void main(String[] args) {

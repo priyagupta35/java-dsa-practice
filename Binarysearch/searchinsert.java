@@ -1,4 +1,51 @@
-package arrays.arrays.binarysearch;
+/*
+Problem: Search Insert Position
+Topic: Binary Search
+
+Description:
+Given a sorted array of distinct integers and a target value, return the index if the target is found.
+If the target is not found, return the index where it would be inserted to maintain sorted order.
+
+Example:
+Input:
+Array = [1, 3, 5, 6]
+Target = 5
+
+Output:
+2
+
+Input:
+Target = 2
+
+Output:
+1
+
+Input:
+Target = 7
+
+Output:
+4
+
+Approach:
+- Use Binary Search to efficiently find the position
+- Initialize:
+  - start = 0
+  - end = n - 1
+- While start <= end:
+  - Calculate mid
+  - If nums[mid] == target → return mid
+  - If nums[mid] < target → move right (start = mid + 1)
+  - Else → move left (end = mid - 1)
+- If target is not found, return start
+  (start will point to the correct insert position)
+
+Time Complexity: O(log n)
+Space Complexity: O(1)
+*/
+
+
+
+package Binarysearch;
   import java.util.*;
   public class searchinsert {
   public static void main(String[] args) {
@@ -19,7 +66,7 @@ package arrays.arrays.binarysearch;
 
   // int start=0;
     //nt end=n-1;
-    int tarindex=n;
+   // int tarindex=n;
     while(start<=end)
     {
       int mid=start+(end-start)/2;
@@ -28,7 +75,7 @@ package arrays.arrays.binarysearch;
 
       if(tar==nums[mid])  //target==mid value
       {
-          tarindex=mid;
+          tar=mid;
           break;
           //System.out.println("index of the target element:"+ mid);
       }
@@ -43,10 +90,10 @@ package arrays.arrays.binarysearch;
           
       }
   }
-      if(tarindex==n)
+      if(tar==n)
       {
-          tarindex=start;
-          System.out.println("Target index should be inserted at index:"+ tarindex);
+          tar=start;
+          System.out.println("Target index should be inserted at index:"+ tar);
       }
       //System.out.println("Index of the target element:"+ nums[tarindex]);
     

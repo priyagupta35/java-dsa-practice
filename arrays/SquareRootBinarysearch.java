@@ -1,6 +1,33 @@
+/*
+Problem: Find Square Root using Binary Search
+Topic: Binary Search
+
+Description:
+Given a non-negative integer x, find the integer square root of x.
+The result should be the floor value (i.e., the greatest integer such that square <= x).
+
+Example:
+Input: x = 8
+Output: 2
+
+Input: x = 16
+Output: 4
+
+Approach:
+- Use Binary Search between 1 and x
+- Calculate mid and compare mid * mid with x
+- If equal → return mid
+- If mid * mid < x → move right and store result
+- Else → move left
+
+Time Complexity: O(log n)
+Space Complexity: O(1)
+*/
+
+
 package arrays;
 import java.util.*;
-public class srqtbins {
+public class SquareRootBinarysearch {
 public static void main(String[] args) {
     Scanner in=new Scanner(System.in);
     System.out.println("ENTER THE NUMBER :");
