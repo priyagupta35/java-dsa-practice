@@ -12,6 +12,7 @@ The goal of this repository is to improve problem-solving skills and prepare for
 - Recursion
 - Linked List
 - Binary Search
+- Stack & Queue
 
 
  📂 Repository Structure
@@ -24,6 +25,7 @@ The goal of this repository is to improve problem-solving skills and prepare for
         ├── recursion
         ├── linkedlist
         ├── binarysearch
+        ├──Stack & Queue
 
         
 
