@@ -1,3 +1,5 @@
+/*
+ *
 class Node{
     int val;
     Node prev;
@@ -24,11 +26,12 @@ class LinkedList{
      head=node;
     }
 
-void delhead(int val)
+void delhead()
 {
    if(head==null)
    {
     System.out.println("list is empty");
+    return;
    }
 head = head.next;
 
@@ -49,7 +52,7 @@ head = head.next;
     }
 }
 
-public class delatstartddl {
+public class dl {
 public static void main(String[] args) {
     LinkedList list=new LinkedList();
     list.insert(70);
@@ -57,7 +60,7 @@ public static void main(String[] args) {
     list.insert(55);
     list.insert(33);
     list.display();
-    list.delhead(90);
+    list.delhead();
     System.out.println("After deletion:");
     list.display();
 }   

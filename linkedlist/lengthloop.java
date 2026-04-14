@@ -1,3 +1,32 @@
+/*
+ * Problem: Find the length of a loop in a Singly Linked List
+ *
+ * Approach:
+ * - Use Floyd’s Cycle Detection Algorithm (Tortoise and Hare)
+ *
+ * - Step 1: Detect loop
+ *      • Initialize two pointers: slow and fast
+ *      • Move slow by 1 step and fast by 2 steps
+ *      • If they meet → loop exists
+ *
+ * - Step 2: Find loop length
+ *      • Move one pointer ahead and keep the other fixed
+ *      • Traverse the loop until both pointers meet again
+ *      • Count the number of nodes in the loop
+ *
+ * - If no loop is detected:
+ *      • Return -1
+ *
+ * - For display:
+ *      • Traverse normally (only works when no loop is present)
+ *
+ * Time Complexity:
+ * - Loop Detection: O(n)
+ * - Loop Length Calculation: O(n)
+ *
+ * Space Complexity: O(1)
+ */
+
 class Node{
     int val;
     Node next;

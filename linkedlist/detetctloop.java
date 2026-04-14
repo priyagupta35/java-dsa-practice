@@ -1,3 +1,28 @@
+/*
+ * Problem: Detect the starting node of a loop in a Singly Linked List
+ *
+ * Approach: Floyd’s Cycle Detection Algorithm
+ *
+ * - Step 1:
+ *      • Use slow and fast pointers
+ *      • slow moves 1 step, fast moves 2 steps
+ *      • If they meet → loop exists
+ *
+ * - Step 2:
+ *      • Move slow to head
+ *      • Move both pointers one step at a time
+ *      • Point where they meet → start of loop
+ *
+ * Time Complexity:
+ * - O(n)
+ *
+ * Space Complexity:
+ * - O(1)
+ */
+
+
+
+
 class Node{
     int val;
     Node next;
@@ -18,14 +43,14 @@ class Node{
     {
     Node slow=head;
       Node fast=head;
-    while(fast!=null || fast.next!=null){
+    while(fast!=null && fast.next!=null){
         slow=slow.next;
         fast=fast.next.next;
         if(slow==fast)
         {
            // int pos=0;
             slow=head;
-            while(fast!=slow)
+            while(slow!=fast)
             {
                 slow=slow.next;
                 fast=fast.next.next;

@@ -1,3 +1,34 @@
+/*
+ * Problem: Insert a node after a given value in a Singly Linked List
+ *
+ * Approach:
+ * - Maintain a head pointer
+ *
+ * - For insertion at beginning:
+ *      • Create a new node
+ *      • Point new node’s next to current head
+ *      • Update head to new node
+ *
+ * - For insertion after a given value:
+ *      • Traverse the list using a temporary pointer
+ *      • If target value is found:
+ *          - Create a new node
+ *          - Set new node’s next to temp.next
+ *          - Link temp.next to new node
+ *      • If value not found → print message
+ *
+ * - For display:
+ *      • Traverse from head and print values
+ *
+ * Time Complexity:
+ * - Insertion at beginning: O(1)
+ * - Insertion at value: O(n)
+ * - Display: O(n)
+ *
+ * Space Complexity: O(1)
+ */
+
+
 class Node {
     int val;
     Node next;

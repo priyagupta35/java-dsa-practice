@@ -1,5 +1,35 @@
  //creating linkedlist and displaying
-class Node
+
+
+/*
+ * Problem: Create a Singly Linked List with insertion at beginning and at end
+ *
+ * Approach:
+ * - Maintain a head pointer
+ *
+ * - For insertion at beginning:
+ *      • Create a new node
+ *      • Point new node’s next to current head
+ *      • Update head to new node
+ *
+ * - For insertion at end:
+ *      • Create a new node
+ *      • If list is empty → new node becomes head
+ *      • Else:
+ *          - Traverse till the last node
+ *          - Attach new node at the end
+ *
+ * - For display:
+ *      • Traverse from head and print values
+ *
+ * Time Complexity:
+ * - Insertion at beginning: O(1)
+ * - Insertion at end: O(n)
+ * - Display: O(n)
+ *
+ * Space Complexity: O(1)
+ */
+ class Node
      {
         int val;
         Node next;
@@ -44,6 +74,7 @@ class Node
         }
         System.out.println("null");
     }
+}
 
    class llcreate{    
 public static void main(String[] args) {
@@ -63,4 +94,5 @@ public static void main(String[] args) {
 }
 }
     }
+
     

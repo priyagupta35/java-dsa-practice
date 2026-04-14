@@ -1,3 +1,27 @@
+/*
+ * Problem: Remove the Nth node from the end of a Singly Linked List
+ *
+ * Approach:
+ * - Use two pointers (slow and fast)
+ *
+ * - Step 1:
+ *      • Move fast pointer n steps ahead
+ *      • If fast becomes null → remove head node
+ *
+ * - Step 2:
+ *      • Move both pointers until fast reaches last node
+ *
+ * - Step 3:
+ *      • Remove node by linking slow.next to slow.next.next
+ *
+ * Time Complexity:
+ * - O(n)
+ *
+ * Space Complexity:
+ * - O(1)
+ */
+
+
 class Node{
     int val;
     Node next;
@@ -16,20 +40,24 @@ class Node{
             node.next=head;
             head=node;
         }
-        public static void removefromtheend(Node head,int n, Node node)
+         void removefromtheend(int n)
         {
             Node slow=head;
             Node fast=head;
+
             for(int i=1;i<=n;i++)
             {
+                if(fast==null){
                 fast=fast.next;
             }
-            if(head==null)
+        }
+
+            if(fast==null)
             {
-                head=node;
+                head=head.next;
                 return;
             }
-            while(fast!=null)
+            while(fast.next!=null)
             {
                 slow=slow.next;
                 fast=fast.next;
@@ -47,7 +75,7 @@ class Node{
              }
         }
     }
-    public class remov
+    public class removeFromEnd{
         public static void main(String[] args) {
 
         
@@ -66,10 +94,14 @@ class Node{
             
             list.insert(4);
             list.display();
-            list.removefromtheend(a, 4, 3);
+            list.removefromtheend( 4);
+            System.out.println("After deletion:");
             list.display();
 }
-}
+    }
+
+
+
             
         
 

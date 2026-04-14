@@ -1,4 +1,32 @@
     
+/*
+ * Problem: Merge two sorted Singly Linked Lists into a single sorted list
+ *
+ * Approach:
+ * - Maintain two pointers for both lists (f and s)
+ *
+ * - For merging:
+ *      • Compare values of both nodes
+ *      • Insert the smaller value into a new list
+ *      • Move the corresponding pointer forward
+ *
+ * - After traversal:
+ *      • If elements remain in first list → add them to result
+ *      • If elements remain in second list → add them to result
+ *
+ * - Return the merged list
+ *
+ * - For display:
+ *      • Traverse from head and print values
+ *
+ * Time Complexity:
+ * - Merging: O(n + m)
+ * - Display: O(n + m)
+ *
+ * Space Complexity: O(n + m)
+ */
+
+
     // merge two linkedlist 
     
     class Node

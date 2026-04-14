@@ -1,3 +1,21 @@
+// Problem: Create a Singly Linked List and insert elements at the end
+//  *
+//  * Approach:
+//  * - Maintain a head pointer
+//  * - For insertion:
+//  *      • If list is empty → new node becomes head
+//  *      • Else traverse till last node and attach new node
+//  * - For display:
+//  *      • Traverse from head and print values
+//  *
+//  * Time Complexity:
+//  * - Insertion: O(n)
+//  * - Display: O(n)
+//  *
+//  * Space Complexity: O(1)
+//  */
+
+
 class Node {
     int val;
     Node next;

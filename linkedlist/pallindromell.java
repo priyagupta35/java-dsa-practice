@@ -1,4 +1,39 @@
-    class Node{
+   /*
+ * Problem: Check if a Singly Linked List is a Palindrome
+ *
+ * Approach:
+ * - Use two-pointer technique (slow and fast)
+ *
+ * - Step 1: Find middle of the list
+ *      • Move slow by 1 step and fast by 2 steps
+ *      • When fast reaches end → slow is at middle
+ *
+ * - Step 2: Reverse second half of the list
+ *      • Call recursive reverse function on slow.next
+ *
+ * - Step 3: Compare both halves
+ *      • Compare nodes from start and reversed second half
+ *      • If any mismatch → not palindrome
+ *
+ * - Step 4: Restore original list
+ *      • Reverse second half again and reconnect
+ *
+ * - Return true if all values match, else false
+ *
+ * Time Complexity:
+ * - Finding middle: O(n)
+ * - Reversing: O(n)
+ * - Comparison: O(n)
+ *
+ * Overall: O(n)
+ *
+ * Space Complexity:
+ * - O(n) (due to recursion stack)
+ */
+   
+   
+   
+   class Node{
         int val;
         Node next;
         Node(int val){

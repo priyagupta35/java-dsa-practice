@@ -1,3 +1,105 @@
+/*
+ * Problem: Create a Doubly Linked List and perform insertion at beginning and at end
+ *
+ * Approach:
+ * - Maintain two pointers: head and tail
+ *
+ * - For insertion at beginning:
+ *      • Create a new node
+ *      • If list is empty → head and tail point to new node
+ *      • Else:
+ *          - Set new node’s next to current head
+ *          - Set current head’s prev to new node
+ *          - Update head to new node
+ *
+ * - For insertion at end:
+ *      • Create a new node
+ *      • If list is empty → head and tail point to new node
+ *      • Else:
+ *          - Link current tail’s next to new node
+ *          - Set new node’s prev to tail
+ *          - Update tail to new node
+ *
+ * - For display:
+ *      • Traverse from head using next pointer
+ *      • Print each node value
+ *
+ * Time Complexity:
+ * - Insertion at beginning: O(1)
+ * - Insertion at end: O(1)
+ * - Display: O(n)
+ *
+ * Space Complexity: O(1)
+ */
+
+/*
+ * Problem: Create a Doubly Linked List and perform insertion at beginning and at end
+ *
+ * Approach:
+ * - Maintain two pointers: head and tail
+ *
+ * - For insertion at beginning:
+ *      • Create a new node
+ *      • If list is empty → head and tail point to new node
+ *      • Else:
+ *          - Set new node’s next to current head
+ *          - Set current head’s prev to new node
+ *          - Update head to new node
+ *
+ * - For insertion at end:
+ *      • Create a new node
+ *      • If list is empty → head and tail point to new node
+ *      • Else:
+ *          - Link current tail’s next to new node
+ *          - Set new node’s prev to tail
+ *          - Update tail to new node
+ *
+ * - For display:
+ *      • Traverse from head using next pointer
+ *      • Print each node value
+ *
+ * Time Complexity:
+ * - Insertion at beginning: O(1)
+ * - Insertion at end: O(1)
+ * - Display: O(n)
+ *
+ * Space Complexity: O(1)
+ */
+
+/*
+ * Problem: Create a Doubly Linked List and perform insertion at beginning and at end
+ *
+ * Approach:
+ * - Maintain two pointers: head and tail
+ *
+ * - For insertion at beginning:
+ *      • Create a new node
+ *      • If list is empty → head and tail point to new node
+ *      • Else:
+ *          - Set new node’s next to current head
+ *          - Set current head’s prev to new node
+ *          - Update head to new node
+ *
+ * - For insertion at end:
+ *      • Create a new node
+ *      • If list is empty → head and tail point to new node
+ *      • Else:
+ *          - Link current tail’s next to new node
+ *          - Set new node’s prev to tail
+ *          - Update tail to new node
+ *
+ * - For display:
+ *      • Traverse from head using next pointer
+ *      • Print each node value
+ *
+ * Time Complexity:
+ * - Insertion at beginning: O(1)
+ * - Insertion at end: O(1)
+ * - Display: O(n)
+ *
+ * Space Complexity: O(1)
+ */
+
 class Node{
     int val;
     Node next;
@@ -49,10 +151,7 @@ void display()
         }
         System.out.println("null");
     }
-private void whilie(boolean b) {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'whilie'");
-}
+
 }
     public class insertatenddll {
     public static void main(String[] args) {
@@ -68,4 +167,5 @@ private void whilie(boolean b) {
          list.display();
    }
     }
+
 
